@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+body{
+    background-image:url(lightscape-LtnPejWDSAY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+.wrapper{
+  padding: 40px 50px ;
+  border: 1px solid rgb(255,255,255);
+  border-radius: 10px;
+  width: 420px;
+  background-color:transparent;
+  background-position: center;
+  backdrop-filter: blur(2px);
+  box-shadow: 2px 1px 1px rgb(0,0,0);
+
+}
+.wrapper h1{
+    font-size: 2.5em;
+    background: linear-gradient(to right,rgb(145, 16, 16) ,rgb(8, 8, 236));
+    background-clip: text;
+    color:transparent;
+    text-align: center;
+}
+.wrapper .input-item{
+   position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    margin:30px 0 ;
+    color: #fff;
+}
+.input-item input{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border: 2px solid rgb(255,255,255);
+    border-radius: 26px;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px 45px 20px 20px;
+    color: #fff;
+    padding: 20px;
+
+}
+.input-item input::placeholder{
+    color: #fff
+}
+.input-item i{
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 20px;
+}
+.forgote{
+    margin-top: -15px;
+     margin-bottom: 15px;
+     display: flex;
+     justify-content: space-between;
+     color: #fff;
+     font-size: 16px;
+}.forgote a{
+    text-decoration: none;
+    color: #fff;
+}
+.forgote input{
+    margin: 6px;
+}
+.forgote p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(3, 3, 43);
+
+}
+.wrapper button{
+    width: 100%;
+    height: 45px;
+    border: 1px solid ;
+    border-radius: 28px;
+    box-shadow: 5px 5px 10px rgd(0,0,0);
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    transition: 0.3s;
+    z-index: 0;
+    
+    
+}
+
+.wrapper button:hover{
+    background-color: transparent;
+}
+.register{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.register a{
+    text-decoration: none;
+    color: #fff;
+    font-weight:600;
+}
+.register  span{
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 150ms;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+@keyframes rotate {
+    0%{
+        transform:rotateX(180deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}
+.register a:hover{
+    color: rgb(3, 3, 43);
+}
